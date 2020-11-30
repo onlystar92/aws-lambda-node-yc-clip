@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YC clip</title>
+    <script src="constants.js"></script>
+    <script src="helpers.js"></script>
+    <script src="index.js"></script>
+    <style>
+        h5 {
+            margin: 0 0 10px 0;
+        }
+        .panel {
+            padding: 10px 30px;
+            border: solid 1px #333;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+           margin: 20px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="panel">
+        <h5>Delete tables</h5>
+
+        <div class="button-container">
+            <button id="delete-tables-btn">Delete tables</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h5>Create tables</h5>
+
+        <div class="button-container">
+            <button id="create-tables-btn">Create tables</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h5>Create clip</h5>
+
+        <div>project id</div>
+        <input type="text" id="create-clip-project-id">
+
+        <div>clip reference</div>
+        <input type="text" id="create-clip-clip-reference">
+
+        <div class="button-container">
+            <button id="create-clip-btn">Create clip</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h5>Create project</h5>
+
+        <div>organizer id</div>
+        <input type="text" id="create-project-organizer-id">
+
+        <div class="button-container">
+            <button id="create-project-btn">Create project</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h5>Delete clip</h5>
+
+        <div>project id</div>
+        <input type="text" id="delete-clip-project-id">
+
+        <div>clip id</div>
+        <input type="text" id="delete-clip-clip-id">
+
+        <div class="button-container">
+            <button id="delete-clip-btn">Delete clip</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h5>Delete project</h5>
+
+        <div>project id</div>
+        <input type="text" id="delete-project-project-id">
+
+        <div class="button-container">
+            <button id="delete-project-btn">Delete project</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h5>Get clips</h5>
+
+        <div>project id</div>
+        <input type="text" id="get-clips-project-id">
+
+        <div class="button-container">
+            <button id="get-clips-btn">Get clips</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h5>Get Project</h5>
+
+        <div>project id</div>
+        <input type="text" id="get-project-project-id">
+
+        <div class="button-container">
+            <button id="get-project-btn">Get project</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h5>Get Project ID</h5>
+
+        <div>access code</div>
+        <input type="text" id="get-project-id-access-code">
+
+        <div class="button-container">
+            <button id="get-project-id-btn">Get project id</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h5>Stitch project</h5>
+
+        <div>project id</div>
+        <input type="text" id="stitch-project-project-id">
+
+        <div class="button-container">
+            <button id="stitch-project-btn">Stitch project</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h5>Create upload endpoint</h5>
+
+        <div>project id</div>
+        <input type="text" id="create-upload-endpoint-is-android">
+
+        <div>key</div>
+        <input type="text" id="create-upload-endpoint-key">
+
+        <div class="button-container">
+            <button id="create-upload-endpoint-btn">Create endpoint</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h5>Upload movie</h5>
+
+        <div>url</div>
+        <input type="text" id="upload-movie-url">
+
+        <div>file</div>
+        <input type="file" id="movie" accept="video/mp4,video/x-m4v,video/*">
+
+        <div class="button-container">
+            <button id="upload-movie-btn">Upload movie</button>
+        </div>
+    </div>
+
+</body>
+</html>
