@@ -20,8 +20,8 @@ const getProjectId = require('./services/getProjectId');
 const stitchProject = require('./services/stitchProject');
 
 AWS.config.update({
-    accessKeyId: 'AKIAYFG7DFPBABBYDCFN',
-    secretAccessKey: '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',
+    accessKeyId: 'AKIAYFG7DFPBNQZATMMN',
+    secretAccessKey: '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',
     region: "eu-central-1",
     signatureVersion: 'v4',
 });
