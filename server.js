@@ -28,6 +28,7 @@ AWS.config.update({
 
 const dynamodb = new AWS.DynamoDB({apiVersion: "2012-08-10"});
 const docClient = new AWS.DynamoDB.DocumentClient();
+const lambda = new AWS.Lambda({region: 'eu-west-1'});
 const s3Client = new AWS.S3({
     signatureVersion: 'v4',
     region: 'eu-central-1',
@@ -97,7 +98,7 @@ app.get('/get-project-id/:accessCode', (req, res) => {
 });
 
 app.post('/stitch-project', (req, res) => {
-	stitchProject(docClient, req, res);
+	stitchProject(docClient, lambda, req, res);
 });
 
 app.post('/create-upload-endpoint', (req, res) => {
